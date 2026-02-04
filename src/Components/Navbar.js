@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="dropdown">
       <div className="drawer lg:hidden ">
   <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
-  <div className="drawer-content mr-40 ">
+  <div className="drawer-content">
     {/* Page content here */}
     <label htmlFor="my-drawer-1" className=" btn outline-transparent border-transparent bg-red-500 rounded-3xl "> 
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" /> </svg> 
@@ -38,7 +38,7 @@ const Navbar = () => {
       <Image className=' h-20 w-30 hidden lg:block ' src={mainLogo} alt=''/>
      </div>
      <div >
-      <Image className=' h-20 w-50 lg:hidden ' src={mainLogo} alt=''/>
+      <Image className=' h-15 w-40 lg:hidden ' src={mainLogo} alt=''/>
      </div>
 
   </div>
@@ -48,14 +48,14 @@ const Navbar = () => {
       <li ><a>Item 1</a></li>
       <li>
         <details>
-          <summary>Parent</summary>
+          <summary className=' dark:text-amber-50 dark:bg-amber-50 ' >Parent</summary>
           <ul className="p-2 bg-black dark:bg-amber-50 w-40 z-1">
-            <li><a >Submenu 1</a></li>
-            <li><a >Submenu 2</a></li>
+            <li><a className=' dark:bg-amber-300 ' >hjgj 1</a></li>
+            <li><a className=' dark:bg-amber-300 ' >gjhgjg 2</a></li>
           </ul>
         </details>
       </li>
-      <li><a>Item 3</a></li>
+      <li><a className=' dar ' >Item 3</a></li>
     </ul>
   </div>
 
