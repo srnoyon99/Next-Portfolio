@@ -123,11 +123,13 @@ const Navbar = () => {
   </div>
   <div className="drawer-side">
     <label htmlFor="my-drawer-5" aria-label="close sidebar" className="drawer-overlay"></label>
-    <ul className="menu bg-yellow-50 dark:bg-slate-900 min-h-full w-96 p-4">
+    <div className="menu bg-yellow-50 border-t-1 border-black dark:bg-slate-900 dark:border-t-1 dark:border-slate-300 h-80 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] ">
       {/* Sidebar content here */}
+      <ul className='container'>
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
-    </ul>
+      </ul>
+    </div>
   </div>
 </div>
 
