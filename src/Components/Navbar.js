@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, X, ChevronDown, Sun, Moon, List } from 'lucide-react'
+import Logo from "../../image/logo.svg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,19 +41,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="relative w-12 h-12 md:w-14 md:h-14">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-600 rounded-[15px] rotate-50 transition-transform animate-spin hover:rotate-180"></div>
-                <div className="absolute inset-0 bg-gradient-to-br dark:from-black from-amber-50 dark:to-black to-white rounded-[50%] flex items-center justify-center">
-                  <span className="text-black dark:text-white font-extrabold shadow-2xs text-4xl md:text-4xl">Ñ</span>
-                </div>
-              </div>
-              {/* <span className="hidden sm:block text-2xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-                SR.NOYON
-              </span> */}
+          <div className="">
+            <Link href="/" className="flex items-center justify-center space-x-2">
+            <h1 className=' absolute text-black dark:text-amber-50 font-extrabold text-[33px] translate-x-0.5 ' >Ñ</h1>
+            <Image className=' animate-spin relative z-20 h-16 ' src={Logo} alt='Logo'/>
             </Link>
           </div>
+          {/* Logo */}
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
@@ -118,12 +113,23 @@ const Navbar = () => {
             )}
 
             {/* CTA Button - Desktop */}
-            <Link
-              href="/contact"
-              className="hidden lg:block px-3 py-2 bg-gradient-to-r from-red-600 to-red-600  text-white font-medium rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-             <Menu />
-            </Link>
+           <div className="drawer drawer-end">
+  <input id="my-drawer-5" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content">
+    {/* Page content here */}
+    <label htmlFor="my-drawer-5" className="hidden lg:block px-3 py-2 bg-gradient-to-r from-red-600 to-red-600  text-white font-medium rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-200 shadow-md hover:shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify-icon lucide-text-align-justify"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>
+    </label>
+  </div>
+  <div className="drawer-side">
+    <label htmlFor="my-drawer-5" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu bg-yellow-50 dark:bg-slate-900 min-h-full w-96 p-4">
+      {/* Sidebar content here */}
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
+</div>
 
             {/* Mobile Menu Button */}
             <button
