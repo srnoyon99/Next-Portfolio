@@ -117,13 +117,13 @@ const Navbar = () => {
   <input id="my-drawer-5" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content">
     {/* Page content here */}
-    <label htmlFor="my-drawer-5" className="hidden lg:block px-3 py-2 bg-gradient-to-r from-red-600 to-red-600  text-white font-medium rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-200 shadow-md hover:shadow-lg">
+    <label htmlFor="my-drawer-5" className="hidden lg:block px-3 py-2 cursor-pointer bg-gradient-to-r from-red-600 to-red-600  text-white font-medium rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-200 shadow-md hover:shadow-lg">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify-icon lucide-text-align-justify"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>
     </label>
   </div>
   <div className="drawer-side">
     <label htmlFor="my-drawer-5" aria-label="close sidebar" className="drawer-overlay"></label>
-    <div className="menu bg-yellow-50 border-t-1 border-black dark:bg-slate-900 dark:border-t-1 dark:border-slate-300 h-80 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] ">
+    <div className="menu hidden lg:block bg-yellow-50 border-t-1 border-black dark:bg-slate-900 dark:border-t-1 dark:border-slate-300 h-80 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] ">
       {/* Sidebar content here */}
       <ul className='container'>
       <li><a>Sidebar Item 1</a></li>
