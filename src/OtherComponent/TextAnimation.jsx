@@ -5,7 +5,7 @@ export default function TextAnimation() {
   const titles = [
     'Web Developer',
     'Web Designer',
-    'UI/UX Designer',
+    'React Developer',
     'Freelancer'
   ];
   

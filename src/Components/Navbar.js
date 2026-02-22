@@ -101,7 +101,7 @@ const Navbar = () => {
             {mounted && (
               <button
                 onClick={toggleTheme}
-                className="p-2.5 rounded-2xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                className="p-2.5 rounded-2xl cursor-pointer bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? (
@@ -136,7 +136,7 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="lg:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              className="lg:hidden p-2 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -150,7 +150,7 @@ const Navbar = () => {
             isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="py-4 space-y-1 border-t border-gray-200 dark:border-gray-700">
+          <div className="py-4 space-y-1 border-t border-gray-500 dark:border-gray-700">
             {navLinks.map((link) => (
               link.dropdown ? (
                 <div key={link.name} className="space-y-1">

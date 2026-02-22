@@ -21,3 +21,377 @@
   --breakpoint-2xl: 96rem;   
   /* CONTAINER */
 }
+
+/* TEXT ANIMATION DARK 1 */
+
+.webdsin {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsin {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsin {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* TEXT ANIMATION DARK 1 */
+
+/* SM TEXT ANIMATION DARK 1 */
+
+.SMwebdsin {
+            font-size: 45px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsin {
+                font-size: 55px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsin {
+                font-size: 40px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* SM TEXT ANIMATION DARK 1 */
+
+
+/* TEXT ANIMATION DARK 2 */
+
+ .webdesin {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #ffffff;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesin {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesin {
+                font-size: 40px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* TEXT ANIMATION DARK 2 */
+
+
+/* SM TEXT ANIMATION DARK 2 */
+
+ .Smwebdsin {
+            font-size: 45px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #ffffff;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesin {
+                font-size: 55px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesin {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* SM TEXT ANIMATION DARK 2 */
+
+/* TEXT ANIMATION LIGHT 1 */
+
+.webdsinlight {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #000000;
+            text-stroke: 3px #000000;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsinlight {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #000000;
+                text-stroke: 2px #000000;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsinlight {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* TEXT ANIMATION LIGHT 1 */
+
+/*SM TEXT ANIMATION LIGHT 1 */
+
+.wesinlight {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #000000;
+            text-stroke: 3px #000000;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsinlight {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #000000;
+                text-stroke: 2px #000000;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsinlight {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/*SM TEXT ANIMATION LIGHT 1 */
+
+/* TEXT ANIMATION LIGHT 2 */
+.webdesinlight {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #000000;
+            -webkit-text-stroke: 3px #000000;
+            text-stroke: 3px #000000;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesinlight {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #000000;
+                text-stroke: 2px #000000;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesinlight {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+/* TEXT ANIMATION LIGHT 2 */
+
+/*SM TEXT ANIMATION LIGHT 2 */
+.smesinlight {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #000000;
+            -webkit-text-stroke: 3px #000000;
+            text-stroke: 3px #000000;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesinlight {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #000000;
+                text-stroke: 2px #000000;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesinlight {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+/*SM TEXT ANIMATION LIGHT 2 */
