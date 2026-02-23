@@ -9,6 +9,7 @@ import lightPIC from '../../image/lightPIC.png'
 import Image from 'next/image'
 import MyworkButton from '@/OtherComponent/MyworkButton'
 import DownloadButton from '@/OtherComponent/DownloadButton'
+import Experience from '@/Experience/page'
 
 
 const Homepages = () => {
@@ -20,7 +21,7 @@ const Homepages = () => {
     <section>
 
       {/* wrap the hero with fixed background */}
-      <div className=" relative h-[810px] md:h-fit lg:h-[837px] overflow-hidden bg-fixed bg-cover bg-center text-black dark:text-white">
+      <div className=" relative h-fit md:h-fit lg:h-[837px] overflow-hidden bg-fixed bg-cover bg-center text-black dark:text-white">
 
 {/* .................................................................................................................................................. */}
 
@@ -222,7 +223,7 @@ const Homepages = () => {
             {/* Details...... */}
 
             {/* Button...... */}
-                    <div className=' flex gap-10 items-center justify-start mt-7 '>
+                    <div className=' flex gap-10 items-center justify-start mt-7 mb-5 '>
                          <button className=' z-50 cursor-pointer ' >
                               <MyworkButton />
                          </button>
@@ -241,6 +242,10 @@ const Homepages = () => {
 
         {/* Content */}
 
+      </div>
+
+      <div>
+        <Experience/>
       </div>
 
     </section>
