@@ -4,25 +4,27 @@ import { useEffect, useRef, useState } from "react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const stats = [
-  { end: 20,   suffix: "k+", label: "Projects Complete" },
-  { end: 10,   suffix: "k+", label: "Natural Products"  },
-  { end: 200,  suffix: "+",  label: "Client Reviews"    },
-  { end: 1000, suffix: "+",  label: "Satisfied Clients" },
+  { end: 20, suffix: "k+", label: "Projects Complete" },
+  { end: 10, suffix: "k+", label: "Natural Products" },
+  { end: 200, suffix: "+", label: "Client Reviews" },
+  { end: 1000, suffix: "+", label: "Satisfied Clients" },
 ];
 
 const designSkills = [
-  { name: "Photoshop",          level: 100 },
-  { name: "Figma",              level: 95  },
-  { name: "Adobe XD",          level: 60  },
-  { name: "Adobe Illustrator", level: 70  },
+  { name: "Photoshop", level: 100 },
+  { name: "Figma", level: 95 },
+  { name: "Adobe XD", level: 60 },
+  { name: "Adobe Illustrator", level: 70 },
 ];
 
 const devSkills = [
-  { name: "HTML",       level: 100 },
-  { name: "CSS",        level: 95  },
-  { name: "JavaScript", level: 60  },
-  { name: "WordPress",  level: 70  },
+  { name: "HTML", level: 100 },
+  { name: "CSS", level: 95 },
+  { name: "JavaScript", level: 60 },
+  { name: "WordPress", level: 70 },
 ];
+
+
 
 // ─── Easing ───────────────────────────────────────────────────────────────────
 function easeOutExpo(t) {
@@ -152,6 +154,10 @@ function HeroNumber() {
 export default function Experience() {
   const [heroVisible, setHeroVisible] = useState(false);
 
+  const baseYear = 2025;
+  const currentYear = new Date().getFullYear();
+  const yearCount = currentYear - baseYear + 1;
+
   useEffect(() => {
     // Inter font
     const link = document.createElement("link");
@@ -166,7 +172,7 @@ export default function Experience() {
   return (
     <>
       <style>{`
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        *, *::before, *::after { box-sizing: border-box; }
 
         /* ── Keyframes ─────────────────────────────── */
         @keyframes floatY {
@@ -192,7 +198,7 @@ export default function Experience() {
 
         /* ── CSS Variables — Light (default) ──────── */
         .about-section {
-          --bg:              #F8F8F8;
+          --bg:              #ffffff;
           --hero-card-bg:    linear-gradient(140deg, #fff0f4 0%, #fff5f7 45%, #ffffff 100%);
           --hero-card-border:rgba(255,31,90,0.18);
           --heading-color:   #0a0a0a;
@@ -211,7 +217,7 @@ export default function Experience() {
 
         /* ── CSS Variables — Dark ──────────────────── */
         .dark .about-section {
-          --bg:              #171717;
+          --bg:              #000000;
           --hero-card-bg:    linear-gradient(140deg, #1c0010 0%, #0c0005 45%, #050505 100%);
           --hero-card-border:rgba(255,31,90,0.18);
           --heading-color:   #ffffff;
@@ -275,7 +281,6 @@ export default function Experience() {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 20px;
-          margin-top: 200px;
           margin-bottom: 88px;
           align-items: stretch;
         }
@@ -362,9 +367,6 @@ export default function Experience() {
           transition: color 0.3s ease;
         }
         .hero-heading-fade {
-          background: linear-gradient(90deg, var(--heading-fade-from) 0%, var(--heading-fade-to) 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
           background-clip: text;
         }
 
@@ -457,8 +459,8 @@ export default function Experience() {
         }
         .skills-eyebrow-text {
           font-family: 'Inter', sans-serif;
-          font-size: 10px;
-          font-weight: 700;
+          font-size: 25px;
+          font-weight: 800;
           letter-spacing: 4px;
           color: #ff1f5a;
           text-transform: uppercase;
@@ -478,7 +480,7 @@ export default function Experience() {
         }
         .skills-col-title {
           font-family: 'Inter', sans-serif;
-          font-size: clamp(17px, 1.9vw, 26px);
+          font-size: clamp(25px, 1.9vw, 30px);
           font-weight: 700;
           color: var(--col-title-color);
           letter-spacing: -0.4px;
@@ -500,7 +502,7 @@ export default function Experience() {
         }
         .skill-name {
           font-family: 'Inter', sans-serif;
-          font-size: clamp(9.5px, 0.95vw, 11.5px);
+          font-size: clamp(13px, 0.95vw, 14px);
           font-weight: 600;
           letter-spacing: 1.8px;
           color: var(--skill-name-color);
@@ -517,7 +519,7 @@ export default function Experience() {
           text-align: right;
         }
         .skill-track {
-          height: 3px;
+          height: 6px;
           background: var(--skill-track-bg);
           border-radius: 4px;
           overflow: hidden;
@@ -533,33 +535,58 @@ export default function Experience() {
           animation: shimmer 2.5s infinite linear;
         }
 
-        /* ── Responsive ────────────────────────────── */
-        @media (max-width: 1024px) {
+        /* ── Responsive — custom breakpoints ─────────
+             sm:  40rem  (640px)
+             md:  48rem  (768px)
+             lg:  64rem  (1024px)
+             xl:  74.5rem(1192px)
+             2xl: 96rem  (1536px)
+        ─────────────────────────────────────────── */
+
+        /* below xl (74.5rem) */
+        @media (max-width: 74.5rem) {
           .about-section { padding: 72px 5%; }
           .skills-grid { gap: 40px; }
         }
-        @media (max-width: 800px) {
+
+        /* below lg (64rem) */
+        @media (max-width: 64rem) {
+          .about-section { padding: 64px 5%; }
+          .skills-grid { gap: 32px; }
+          .top-grid { margin-bottom: 72px; }
+        }
+
+        /* below md (48rem) */
+        @media (max-width: 48rem) {
+          .about-section { padding: 56px 5%; }
           .top-grid {
             grid-template-columns: 1fr;
             gap: 16px;
-            margin-bottom: 64px;
+            margin-bottom: 60px;
           }
           .hero-card { padding: 40px 32px 36px; }
           .hero-number { letter-spacing: -4px; }
           .stats-grid { grid-template-columns: 1fr 1fr; }
           .skills-grid { grid-template-columns: 1fr; gap: 44px; }
-          .skills-eyebrow { margin-bottom: 38px; }
+          .skills-eyebrow { margin-bottom: 36px; }
         }
-        @media (max-width: 480px) {
-          .about-section { padding: 52px 5%; }
-          .hero-card { padding: 30px 22px 28px; border-radius: 18px; }
+
+        /* below sm (40rem) */
+        @media (max-width: 40rem) {
+          .about-section { padding: 48px 5%; }
+          .hero-card { padding: 28px 20px 26px; border-radius: 18px; }
           .hero-number { letter-spacing: -3px; }
           .stat-card { border-radius: 14px; }
           .stat-value { letter-spacing: -1px; }
-          .top-grid { margin-bottom: 48px; }
+          .top-grid { margin-bottom: 44px; }
+          .stats-grid { grid-template-columns: 1fr 1fr; }
+          .skills-col-title { font-size: 25px; }
         }
-        @media (max-width: 360px) {
+
+        /* very small — below ~24rem (384px) */
+        @media (max-width: 24rem) {
           .stats-grid { grid-template-columns: 1fr; }
+          .hero-number { letter-spacing: -2px; }
         }
       `}</style>
 
@@ -568,12 +595,13 @@ export default function Experience() {
         <div className="blob blob-2" />
         <div className="blob blob-3" />
 
-        <div className=" mb-10">
-          <h1 className=" text-black dark:text-amber-50 text-6xl font-extrabold  text-center" >Behind every great app is an <span>even greater developer</span></h1>
-          <p className=" text-black dark:text-slate-300 text-center text-lg  ">I specialize in building full-stack web applications with modern technologies, creating intuitive interfaces and robust backend solutions that drive results</p>
-        </div>
+        <div className="about-inner">
 
-        <div className="about-inner ">
+          <div className=" grid items-center justify-center mb-10 text-black dark:text-white" >
+            <h1 className=" text-5xl text-center mb-8 font-extrabold "> Professional Experience </h1>
+            <p className=" text-[25px]"> {yearCount}+ years of crafting exceptional digital experiences across leading companies</p>
+          </div>
+          
 
           {/* ── Top ── */}
           <div className="top-grid">
@@ -589,10 +617,6 @@ export default function Experience() {
                 transition: "opacity 0.85s ease, transform 0.85s cubic-bezier(0.22,1,0.36,1)",
               }}
             >
-              <div className="hero-badge">
-                <div className="hero-badge-dot" />
-                <span className="hero-badge-text">Since 1999</span>
-              </div>
 
               {/* Count-up hero number */}
               <HeroNumber />
