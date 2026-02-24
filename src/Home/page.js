@@ -244,10 +244,6 @@ const Homepages = () => {
 
       </div>
 
-      <div>
-        <Experience/>
-      </div>
-
     </section>
   )
 }

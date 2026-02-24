@@ -1,5 +1,6 @@
 "use client";
 
+import ServicesSection from "@/OtherComponent/ServicesSection";
 import { useEffect, useRef, useState } from "react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -217,7 +218,7 @@ export default function Experience() {
 
         /* ── CSS Variables — Dark ──────────────────── */
         .dark .about-section {
-          --bg:              #000000;
+          --bg:              #1A1919;
           --hero-card-bg:    linear-gradient(140deg, #1c0010 0%, #0c0005 45%, #050505 100%);
           --hero-card-border:rgba(255,31,90,0.18);
           --heading-color:   #ffffff;
@@ -602,7 +603,6 @@ export default function Experience() {
             <p className=" text-[25px]"> {yearCount}+ years of crafting exceptional digital experiences across leading companies</p>
           </div>
           
-
           {/* ── Top ── */}
           <div className="top-grid">
 
@@ -639,6 +639,10 @@ export default function Experience() {
                 <StatCard key={s.label} {...s} index={i} />
               ))}
             </div>
+          </div>
+
+          <div>
+            <ServicesSection/>
           </div>
 
           {/* ── Skills — percentages count up ── */}

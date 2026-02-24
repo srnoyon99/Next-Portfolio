@@ -22,16 +22,8 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { 
-      name: 'Services', href: '/services',
-      dropdown: [
-        { name: 'Web Development', href: '/services/web-development' },
-        { name: 'Mobile Apps', href: '/services/mobile-apps' },
-        { name: 'UI/UX Design', href: '/services/ui-ux-design' },
-        { name: 'Consulting', href: '/services/consulting' },
-      ]
-    },
     { name: 'Experience', href: '/portfolio' },
+    { name: 'Projects', href: '/portfolio' },
     { name: 'Contact', href: '/contact' },
   ]
 
