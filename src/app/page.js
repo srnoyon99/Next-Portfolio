@@ -4,6 +4,7 @@ import Experience from '@/Experience/page'
 import About from '@/About/page'
 import Project from '@/Projects/page'
 import Contact from '@/Contact/page'
+import Message from '@/OtherComponent/Message'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Experience/>
       <Project/>
       <Contact/>
+      <Message/>
     </div>
   )
 }

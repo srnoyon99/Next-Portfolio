@@ -115,7 +115,7 @@ const Navbar = () => {
   </div>
   <div className="drawer-side">
     <label htmlFor="my-drawer-5" aria-label="close sidebar" className="drawer-overlay"></label>
-    <div className="menu hidden lg:block bg-yellow-50 border-t-1 border-black dark:bg-slate-900 dark:border-t-1 dark:border-slate-300 h-80 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] ">
+    <div className="menu hidden lg:block bg-yellow-50 border-t-1 border-black dark:bg-slate-900 dark:border-t-1 dark:border-slate-300 h-80 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] z-50 ">
       {/* Sidebar content here */}
       <ul className='container'>
       <li><a>Sidebar Item 1</a></li>

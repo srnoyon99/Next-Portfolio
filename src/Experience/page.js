@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const stats = [
-  { end: 20, suffix: "k+", label: "Projects Complete" },
-  { end: 10, suffix: "k+", label: "Natural Products" },
-  { end: 200, suffix: "+", label: "Client Reviews" },
-  { end: 1000, suffix: "+", label: "Satisfied Clients" },
+  { end: 70, suffix: "+", label: "Projects Complete" },
+  { end: 50, suffix: "+", label: "React Products" },
+  { end: 20, suffix: "+", label: "Client Reviews" },
+  { end: 10, suffix: "+", label: "Satisfied Clients" },
 ];
 
 const designSkills = [
@@ -599,8 +599,8 @@ export default function Experience() {
         <div className="about-inner">
 
           <div className=" grid items-center justify-center mb-10 text-black dark:text-white" >
-            <h1 className=" text-5xl text-center mb-8 font-extrabold "> Professional Experience </h1>
-            <p className=" text-[25px]"> {yearCount}+ years of crafting exceptional digital experiences across leading companies</p>
+            <h1 className=" text-5xl text-center mb-8 font-extrabold "> Professional <span className=" bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent" >Experience</span> </h1>
+            <p className=" text-[20px] md:text-[25px] text-center "> {yearCount}+ years of crafting exceptional digital experiences across leading companies</p>
           </div>
           
           {/* ── Top ── */}
