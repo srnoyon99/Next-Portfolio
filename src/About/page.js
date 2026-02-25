@@ -73,7 +73,7 @@ export default function About() {
 
 
   return (
-    <section className="relative bg-white dark:bg-black min-h-screen py-24 overflow-hidden transition-colors duration-300">
+    <section className="relative bg-[#EDF5FF] dark:bg-black min-h-screen py-24 overflow-hidden transition-colors duration-300">
 
       {/* Grid texture */}
       <div

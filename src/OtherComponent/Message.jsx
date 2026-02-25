@@ -403,7 +403,7 @@ function PreChatForm({ onStart }) {
       {/* Fields */}
       <div className="px-6 flex flex-col gap-4 pb-5">
         {[
-          { label:"Your Name",   type:"text",  val:name,  set:setName,  ph:"Sarah Johnson" },
+          { label:"Your Name",   type:"text",  val:name,  set:setName,  ph:"Inter Your Name" },
           { label:"Your Gmail",  type:"email", val:email, set:(v)=>{setEmail(v);setTouched(true);}, ph:"you@gmail.com", validate:true },
         ].map(({label,type,val,set,ph,validate})=>(
           <div key={label} className="cw-field flex flex-col gap-1.5">

@@ -110,7 +110,7 @@ export default function Project() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <section className="relative min-h-screen bg-white dark:bg-black py-24 px-4 overflow-hidden transition-colors duration-500">
+      <section className="relative min-h-screen bg-[#EDF5FF] dark:bg-black py-24 px-4 overflow-hidden transition-colors duration-500">
 
         {/* Ambient blobs */}
         <div className="pointer-events-none absolute inset-0">

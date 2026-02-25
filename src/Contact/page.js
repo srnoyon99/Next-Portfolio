@@ -21,7 +21,7 @@ const ContactCard = ({ icon, title, lines }) => (
 
 const INITIAL = { name: "", phone: "", email: "", subject: "", message: "" };
 
-export default function ContactSection() {
+export default function Contact() {
   const [formData, setFormData] = useState(INITIAL);
   const [status, setStatus]     = useState("idle"); // idle | loading | success | error
   const [errMsg, setErrMsg]     = useState("");

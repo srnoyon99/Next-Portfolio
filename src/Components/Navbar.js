@@ -1,10 +1,12 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
 import Link from 'next/link'
-import { Menu, X, ChevronDown, Sun, Moon, List } from 'lucide-react'
+import { Menu, X, ChevronDown, Sun, Moon, List, PhoneIncoming, Mail, MapPin, Facebook, Github, Linkedin } from 'lucide-react'
 import Logo from "../../image/logo.svg"
+import lightDropdown from "../../image/lightDropdown.png"
+import darkDropdown from "../../image/darkDropdown.png"
+import Image from 'next/image'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,10 +23,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Experience', href: '/portfolio' },
-    { name: 'Projects', href: '/portfolio' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '/About' },
+    { name: 'Experience', href: '/Experience' },
+    { name: 'Projects', href: '/Projects' },
+    { name: 'Contact', href: '/Contact' },
   ]
 
   return (
@@ -35,7 +37,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="">
             <Link href="/" className="flex items-center justify-center space-x-2">
-            <h1 className=' absolute text-black dark:text-amber-50 font-extrabold text-[33px] translate-x-0.5 ' >Ñ</h1>
+            <h1 className=' absolute text-black dark:text-amber-50 font-extrabold text-[33px] translate-x-1 ' >Ñ</h1>
             <Image className=' animate-spin relative z-20 h-16 ' src={Logo} alt='Logo'/>
             </Link>
           </div>
@@ -115,12 +117,78 @@ const Navbar = () => {
   </div>
   <div className="drawer-side">
     <label htmlFor="my-drawer-5" aria-label="close sidebar" className="drawer-overlay"></label>
-    <div className="menu hidden lg:block bg-yellow-50 border-t-1 border-black dark:bg-slate-900 dark:border-t-1 dark:border-slate-300 h-80 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] z-50 ">
+    <div className="menu hidden lg:block bg-yellow-50 border-t-1 border-black dark:bg-black dark:border-t-1 dark:border-slate-300 h-81 w-full  bottom-0 left-0 right-0 rounded-t-2xl shadow-2xl transform transition-transform duration-300 translate-y-[596px] z-50 ">
       {/* Sidebar content here */}
-      <ul className='container'>
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
-      </ul>
+      <div className='container'>
+        <div className=' flex items-center justify-between' >
+
+      <div>
+        <Image className=' h-[250px] w-[200px] rounded-2xl ml-25 dark:hidden' src={darkDropdown} alt='img'/>
+        <Image className=' h-[250px] w-[200px] rounded-2xl ml-25 hidden dark:block' src={darkDropdown} alt='img'/>
+        <p className=' text-2xl font-bold text-black dark:text-slate-300 max-w-[400px] text-center ' >Freelancer delivering exceptional Webflow, and Next.js solutions.</p>
+      </div>
+
+      <div>
+        <p className=' text-[20px] text-black dark:text-slate-300 max-w-[380px] '>I am a skilled freelancer specializing in Webflow development, Figma design, and Next.js projects. I deliver creative, dynamic, and user-centric web solutions.</p>
+      </div>
+
+      <div className=' flex-col items-center space-y-3 ' >
+
+        <div className=' flex items-center space-x-8' >
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-transparent cursor-pointer bg-amber-100 dark:bg-slate-900 border-red-700 '>
+        <PhoneIncoming size={24} color="#c70000" />
+          </div>
+          <div>
+            <h1 className=' text-[17px] font-bold text-red-600 ' >Call Now</h1>
+            <h2 className=' text-[14px] font-bold text-black dark:text-white ' > +880 1822-798116 </h2>
+          </div>
+        </div>
+
+        <div className=' flex items-center space-x-8 '>
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-transparent cursor-pointer bg-amber-100 dark:bg-slate-900 border-red-700 '>
+          <Mail size={24} color="#c70000" />
+          </div>
+          <div>
+             <h1 className=' text-[17px] font-bold text-red-600 ' >Mail Me</h1>
+            <h2 className=' text-[14px] font-bold text-black dark:text-white ' > shahriarnoyon1@gmail.com </h2>
+          </div>
+        </div>
+
+        <div className=' flex items-center space-x-8 '>
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-transparent cursor-pointer bg-amber-100 dark:bg-slate-900 border-red-700 '>
+          <MapPin size={24} color="#c70000" />
+          </div>
+          <div>
+            <h1 className=' text-[17px] font-bold text-red-600 ' > Address </h1>
+            <h2 className=' text-[14px] font-bold text-black dark:text-white ' > Ecb Chottor, Cantonment, Dhaka </h2>
+          </div>
+        </div>
+
+        <div className=' flex items-center space-x-14 mt-10 '>
+
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-sky-700 cursor-pointer bg-sky-500 dark:bg-slate-900 border-sky-500 '>
+            <Facebook size={28} color="#ffffff" />
+          </div>
+
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-sky-700 cursor-pointer bg-sky-500 dark:bg-slate-900 border-sky-500 '>
+            <Github size={28} color="#ffffff" />
+          </div>
+
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-sky-700 cursor-pointer bg-sky-500 dark:bg-slate-900 border-sky-500 '>
+            <Linkedin size={28} color="#ffffff" />
+          </div>
+
+          <div className=' border-[1px] p-2 rounded-2xl hover:bg-sky-700 cursor-pointer bg-sky-500 dark:bg-slate-900 border-sky-500 '>
+            <Mail size={28} color="#ffffff" />
+          </div>
+
+        </div>
+
+      </div>
+
+        </div>
+      </div>
+      {/* Sidebar content here */}
     </div>
   </div>
 </div>
