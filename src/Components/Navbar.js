@@ -123,7 +123,7 @@ const Navbar = () => {
         <div className=' flex items-center justify-between' >
 
       <div>
-        <Image className=' h-[250px] w-[200px] rounded-2xl ml-25 dark:hidden' src={darkDropdown} alt='img'/>
+        <Image className=' h-[250px] w-[200px] rounded-2xl ml-25 dark:hidden' src={lightDropdown} alt='img'/>
         <Image className=' h-[250px] w-[200px] rounded-2xl ml-25 hidden dark:block' src={darkDropdown} alt='img'/>
         <p className=' text-2xl font-bold text-black dark:text-slate-300 max-w-[400px] text-center ' >Freelancer delivering exceptional Webflow, and Next.js solutions.</p>
       </div>
