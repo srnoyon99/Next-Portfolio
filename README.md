@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Contact Form (Gmail SMTP)
+
+The contact page uses an API route at `/api/contact` to send form submissions to your Gmail address. To make the email feature work you need to:
+
+1. **Install the mailer dependency:**
+   ```bash
+   npm install nodemailer
+   ```
+
+2. **Provide Gmail credentials via environment variables** (create a `.env.local` file at the project root):
+   ```env
+   GMAIL_USER=shahriarnoyon5599@gmail.com
+   GMAIL_PASS=<your-gmail-app-password>
+   ```
+   > You must generate an [App Password](https://support.google.com/accounts/answer/185833) in your Google account and use it here. Do **not** commit `.env.local`.
+
+3. Restart the dev server so Next.js picks up the new variables.
+
+The API route implementation lives in `src/app/api/contact/route.js` and uses `nodemailer` with Gmail's SMTP service. When the form is submitted, a message will be sent to the same `GMAIL_USER` address.
+
